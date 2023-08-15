@@ -1,0 +1,15 @@
+{% extends 'base.html.njk' %}
+{%block title %}Greetings | Madlibs!{%endblock title %}
+
+
+{% block body %}
+
+    <form action="/game">
+      <p>Would you like to play?</p>
+      <input type="radio" name="play" value="yes" id="yes-input">
+      <label for="yes-input">Yes</label>
+      <input type="radio" name="play" value="no" id="no-input">
+      <label for="no-input">No</label>
+      <button type="submit">Let's go!</button>
+    </form>
+{% endblock body %}
