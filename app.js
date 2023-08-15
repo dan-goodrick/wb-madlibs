@@ -47,7 +47,7 @@ app.get('/hello', (req, res) => {
 
 // Handle the form from /hello and greet the user.
 app.get('/greet', (req, res) => {
-  res.render('greet.html.njk');
+  res.render('greet.html.njk', {...req.query});
 });
 
 app.get('/game', (req, res) => {
